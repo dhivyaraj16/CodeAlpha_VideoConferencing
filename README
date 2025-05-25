@@ -1,0 +1,86 @@
+📹 Video Conferencing App
+A full-featured video conferencing web application built 
+using HTML, CSS, JavaScript, WebRTC, and Socket.IO. 
+
+It includes features like real-time video/audio calls, screen sharing, 
+whiteboard drawing, file sharing, and session recording.
+
+🚀 Features
+✅ Real-time video and audio communication (WebRTC)
+
+🧑‍🤝‍🧑 Multiple users can join a room
+
+🖥️ Screen sharing
+
+📝 Collaborative whiteboard
+
+📁 File sharing between participants
+
+🎥 Record and download your session
+
+🔗 Shareable meeting links
+
+
+📦 Technologies Used
+Frontend: HTML, CSS, JavaScript
+
+Backend: Node.js, Express.js
+
+WebRTC for peer-to-peer media communication
+
+Socket.IO for real-time signaling and drawing
+
+📁 Project Structure
+
+codealpha-video-conferencing/
+├── client/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+├── server/
+│   └── server.js
+├── package.json
+├── README.md
+⚙️ Installation
+Clone the repository
+
+
+npm install
+Start the server
+
+
+node server/server.js
+Ensure port 3001 is not already in use. If needed, change it in server.js.
+
+🌐 Usage
+Open your browser and go to:
+
+
+http://localhost:3001
+Click "Join Meeting" to enter the default room or create a custom room using a URL like:
+
+
+http://localhost:3001/?room=myCustomRoom
+Use features like:
+
+"Generate Link" → Create a room share link
+
+"Share Screen" → Share your screen
+
+"Whiteboard" → Draw collaboratively
+
+"File Share" → Send files to others
+
+"Record" → Start/Stop recording your own stream
+
+
+🛑 Troubleshooting
+Port already in use:
+Error: EADDRINUSE
+➤ Kill the process using the port or change the port number in server.js.
+
+Video not showing up:
+➤ Ensure you’ve granted camera/microphone permissions in the browser.
+
+📄 License
+This project is open-source and free to use.

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Conference App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Video Conference</h1>
+
+  <div id="controls">
+    <button id="joinMeeting">Join Meeting</button>
+    <button id="shareScreen">Share Screen</button>
+    <button id="startRec">Start Recording</button>
+    <button id="stopRec">Stop Recording</button>
+  </div>
+
+  <div id="shareContainer">
+    <button id="generateLink">Generate Share Link</button>
+    <input type="text" id="shareLink" readonly />
+    <button onclick="copyLink()">Copy</button>
+  </div>
+
+  <div id="videos">
+    <video id="localVideo" autoplay muted playsinline></video>
+    <div id="remoteVideos"></div>
+  </div>
+
+  <canvas id="whiteboard" width="400" height="300"></canvas>
+
+  <div>
+    <input type="file" id="fileInput" />
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
